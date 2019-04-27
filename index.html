@@ -43,6 +43,37 @@ Author URL:
 <body>
 	<!-- banner & header section -->
 	<div class="main">
+		<div class="modal fade" role="dialog" id="loginWeb">
+			<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+								<div class="logo2">
+										<h2>
+											<a href="index.html">
+												<span>T</span>aba
+												<span>J</span>ara
+											</a>
+										</h2>
+									</div>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+		
+						<div class="modal-body">
+							<div class="form-group">
+								<input type="text" nome="username" class="form-control" placeholder="Usuário">
+							</div>
+							<div class="form-group">
+								<input type="password" nome="password" class="form-control" placeholder="Senha">
+							</div>	
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-light">Registrar</button>
+							<button type="submit" class="btn btn-success">Entrar</button>
+						</div>
+					</div>
+				</div>
+		</div>
+		
 		<!-- header -->
 		<header>
 			<div class="container-fluid">
@@ -65,7 +96,7 @@ Author URL:
 									<a href="index.html">Início</a>
 								</li>
 								<li>
-									<a href="#about" class="scroll">Sobre</a>
+									<a href="#loginWeb" class="scroll">Sobre</a>
 								</li>
 								<li>
 									<a href="#services" class="scroll">Serviços</a>
@@ -81,6 +112,9 @@ Author URL:
 								</li>
 								<li>
 									<a href="#contact" class="scroll">Fale Conosco</a>
+								</li>
+								<li>
+									<button class="btn btn-danger" data-toggle="modal" data-target="#loginWeb"><i class="far fa-user"></i> Login</button>
 								</li>
 							</ul>
 						</div>
@@ -407,7 +441,6 @@ Author URL:
 					<h5 class="text-capitalize my-3">we give best services</h5>
 					<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat.</p>
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
