@@ -1,38 +1,33 @@
-<!--
-Author: 
-Author URL: 
--->
-
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
-	
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords" content="Car Services Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-	/>
-
-	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Bootstrap-Core-CSS -->
-	<link href="css/JiSlider.css" rel="stylesheet">
-	<!-- //banner-slider -->
-	<link rel="stylesheet" href="css/smoothbox.css" type='text/css' media="all" />
-	<!-- gallery lightbox -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<!-- Style-CSS -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
-	<!-- Font-Awesome-Icons-CSS -->
-	<!-- //Custom-Files -->
-
-
-</head>
-
-<body>
-	<!-- banner & header section -->
-	<div class="main">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Car Services Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+        <title>TabaJara Lava Jato</title>
+		<!-- Fonts -->
+		<link rel="icon" href="{{ asset('img/favicon.ico') }}" >
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        	<!-- Custom-Files -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <!-- Bootstrap-Core-CSS -->
+        <link href="css/JiSlider.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/smoothbox.css') }}" type='text/css' media="all" />
+        <!-- gallery lightbox -->
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
+		<!-- Style-CSS -->
+		
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+        <script src="https://kit.fontawesome.com/bd13c5bef1.js"></script>
+        <!-- Font-Awesome-Icons-CSS -->
+        <!-- //Custom-Files -->
+        
+        <!-- Styles -->
+        
+    </head>
+    <body>
+    <div class="main">
 		<!-- Modal Login -->
 		<div class="modal fade" role="dialog" id="loginWeb">
 			<div class="modal-dialog">
@@ -155,7 +150,7 @@ Author URL:
 								<div class="banner-info">
 									<h3 class="name text-white text-uppercase text-center">
 										<span class="name-part l-text1">Encontre</span>
-										<span class="name-part l-text2">os</span>
+										<span class="name-part l-text2">&nbsp;&nbsp;os</span>
 										<span class="name-part l-text3">melhores serviços para o seu 
 											<label>carro</label> </span>
 									</h3>
@@ -169,7 +164,7 @@ Author URL:
 								<div class="banner-info">
 									<h3 class="name text-white text-uppercase text-center">
 										<span class="name-part l-text1">Encontre</span>
-										<span class="name-part l-text2">os</span>
+										<span class="name-part l-text2">&nbsp;&nbsp;os</span>
 										<span class="name-part l-text3">melhore serviços para o seu 
 											<label>carro</label> </span>
 									</h3>
@@ -200,13 +195,13 @@ Author URL:
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="img-fluid" src="images/g1.jpg" alt="First slide">
+								<img class="img-fluid" src="{{ asset('img/g1.jpg') }}" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="img-fluid" src="images/g4.jpg" alt="Second slide">
+								<img class="img-fluid" src="{{ asset('img/g4.jpg') }}" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="img-fluid" src="images/g3.jpg" alt="Third slide">
+								<img class="img-fluid" src="{{ asset('img/g3.jpg') }}" alt="Third slide">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -269,27 +264,27 @@ Author URL:
 				<div class="row agileits_layouts_gallery_grid">
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14">
 						<div class="_agile_gallery_effect">
-							<a href="images/g1.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g1.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g1.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g1.jpg') }}" alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14 my-md-0 my-2">
 						<div class="_agile_gallery_effect">
-							<a href="images/g2.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g2.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g2.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g2.jpg') }}" alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14">
 						<div class="_agile_gallery_effect">
-							<a href="images/g3.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g3.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g3.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g3.jpg') }}" alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
@@ -298,27 +293,27 @@ Author URL:
 				<div class="row agileits_layouts_gallery_grid mt-2">
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14">
 						<div class="_agile_gallery_effect">
-							<a href="images/g4.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g4.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g4.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g4.jpg') }} "alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14 my-md-0 my-2">
 						<div class="_agile_gallery_effect">
-							<a href="images/g1.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g1.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g1.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g1.jpg') }}" alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 agileits_layouts_gallery_grid1 hover14">
 						<div class="_agile_gallery_effect">
-							<a href="images/g2.jpg" class="sb" title="we love your car the same as you do">
+							<a href="{{ asset('img/g2.jpg') }}" class="sb" title="we love your car the same as you do">
 								<figure>
-									<img src="images/g2.jpg" alt=" " class="img-fluid" />
+									<img src="{{ asset('img/g2.jpg') }}" alt=" " class="img-fluid" />
 								</figure>
 							</a>
 						</div>
@@ -432,7 +427,7 @@ Author URL:
 					</button>
 				</div>
 				<div class="modal-body">
-					<img src="images/g1.jpg" alt=" " class="img-fluid">
+					<img src="{{ asset('img/g1.jpg') }}" alt=" " class="img-fluid">
 					<p>Realizada manualmente utilizando xampus apropriados de primeira qualidade, com componentes que não afetam o meio ambiente, com um acessório que pode ser um pano, 
 						uma esponja ou uma luva de pelos. Auxiliado por uma lavadora móvel de pressão para lançar a água e espuma de lavagem.</p>
 				</div>
@@ -452,7 +447,7 @@ Author URL:
 					</button>
 				</div>
 				<div class="modal-body">
-					<img src="images/g4.jpg" alt=" " class="img-fluid">
+					<img src="{{ asset('img/g4.jpg') }}" alt=" " class="img-fluid">
 					<p>Na Limpeza Ecológica, o produto utilizado é um líquido composto entre outros por cera de carnaúba e o grande diferencial 
 						utilzam-se apenas 300ml de água, pois o foco é o mínimo desperdicio possível, pensando sempre no bem do meio ambeiente.</p>
 				</div>
@@ -472,7 +467,7 @@ Author URL:
 						</button>
 					</div>
 					<div class="modal-body">
-						<img src="images/g2.jpg" alt=" " class="img-fluid">
+						<img src="{{ asset('img/g2.jpg') }}" alt=" " class="img-fluid">
 						<p> Modalidade de limpeza em que o lava-rápido dispõe de um serviço de lavagem a seco que vai ao local escolhido pelo proprietário. 
 							Esta modalidade prioriza a conveniência do proprietário e economia de tempo de descolamento. </p>
 					</div>
@@ -492,7 +487,7 @@ Author URL:
 							</button>
 						</div>
 						<div class="modal-body">
-							<img src="images/g5.jpg" alt=" " class="img-fluid">
+							<img src="{{ asset('img/g5.jpg') }}" alt=" " class="img-fluid">
 							<p> Processo de aplicação de cera sobre a pintura que preenche pequenas irregularidades da superfície e forma uma película de proteção.
 								 Resgatar o brilho da pintura, facilita a remoção de sujeiras e protege a lataria contra sujeiras do cotidiano. </p>
 						</div>
@@ -512,7 +507,7 @@ Author URL:
 								</button>
 							</div>
 							<div class="modal-body">
-								<img src="images/b2.jpg" alt=" " class="img-fluid">
+								<img src="{{ asset('img/b2.jpg') }}" alt=" " class="img-fluid">
 								<p> Realizada inteiramente por máquina, sem a intervenção de pessoas no processo de lavagem. O automovel percorre um túnel de lavagem por uso de esteiras automáticas. 
 									É o processo de lavagem mais rápido, durando em geral menos de 5 minutos e o motorista tem a opção de permanecer dentro do veículo. </p>
 							</div>
@@ -532,7 +527,7 @@ Author URL:
 									</button>
 								</div>
 								<div class="modal-body">
-									<img src="images/g3.jpg" alt=" " class="img-fluid">
+									<img src="{{ asset('img/g3.jpg') }}" alt=" " class="img-fluid">
 									<p> Serviço completo que dispõe de lavagem e enceramento do carro. Criado especialmente para melhor atender o cliente e para darmos o nosso melhor 
 										para agrada-lo sempre. </p>
 								</div>
@@ -553,7 +548,7 @@ Author URL:
 			</h3>
 			<div class="row team-bottom">
 				<div class="col-sm-4 team-grid">
-					<img src="images/team1.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team1.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>Davi</h4>
@@ -578,7 +573,7 @@ Author URL:
 					</div>
 				</div>
 				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
-					<img src="images/team2.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team2.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>Luis</h4>
@@ -603,7 +598,7 @@ Author URL:
 					</div>
 				</div>
 				<div class="col-sm-4 team-grid  mt-sm-0 mt-3">
-					<img src="images/team4.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team4.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>Camilo</h4>
@@ -630,7 +625,7 @@ Author URL:
 			</div>
 			<div class="row team-bottom mt-sm-4 mt-3">
 				<div class="col-sm-4 team-grid">
-					<img src="images/team3.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team3.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>Renan</h4>
@@ -655,7 +650,7 @@ Author URL:
 					</div>
 				</div>
 				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
-					<img src="images/team5.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team5.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>João</h4>
@@ -680,7 +675,7 @@ Author URL:
 					</div>
 				</div>
 				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
-					<img src="images/team6.jpg" class="img-fluid img-thumbnail" alt="">
+					<img src="{{ asset('img/team6.jpg') }}" class="img-fluid img-thumbnail" alt="">
 					<div class="caption">
 						<div class="team-text">
 							<h4>Regis</h4>
@@ -720,7 +715,7 @@ Author URL:
 					<div id="owl-demo" class="owl-carousel">
 						<div class="row item-owl">
 							<div class="col-md-4 img-agile ml-4">
-								<img src="images/te1.jpg" class="img-fluid" alt="" />
+								<img src="{{ asset('img/te1.jpg') }}" class="img-fluid" alt="" />
 							</div>
 							<div class="col-md-7 test-review test-tooltip1">
 								<h6 class="mb-4">Breno Cornélio</h6>
@@ -749,7 +744,7 @@ Author URL:
 						</div>
 						<div class="row item-owl">
 							<div class="col-md-4 img-agile ml-4">
-								<img src="images/te2.jpg" class="img-fluid" alt="" />
+								<img src="{{ asset('img/te2.jpg') }}" class="img-fluid" alt="" />
 							</div>
 							<div class="col-md-7 test-review test-tooltip1">
 								<h6 class="mb-4">Michele Souza</h6>
@@ -778,7 +773,7 @@ Author URL:
 						</div>
 						<div class="row item-owl">
 							<div class="col-md-4 img-agile ml-4">
-								<img src="images/te3.jpg" class="img-fluid" alt="" />
+								<img src="{{ asset('img/te3.jpg') }}" class="img-fluid" alt="" />
 							</div>
 							<div class="col-md-7 test-review test-tooltip1">
 								<h6 class="mb-4">Raíssa Soares</h6>
@@ -916,18 +911,18 @@ Author URL:
 		</div>
 	</div>
 	<!-- //footer -->
-
-
+    
+    
 	<!-- Js files -->
 	<!-- JavaScript -->
-	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
 	<!-- <script src="js/jquery-1.11.3.min.js"></script> -->
 	<!-- Default-JavaScript-File -->
-	<script src="js/bootstrap.js"></script>
+	<script src="{{ asset('js/bootstrap.js') }}"></script>
 	<!-- Necessary-JavaScript-File-For-Bootstrap -->
 
 	<!--banner-slider-->
-	<script src="js/JiSlider.js"></script>
+	<script src="{{ asset('js/JiSlider.js') }}"></script>
 	<script>
 		$(window).load(function () {
 			$('#JiSlider').JiSlider({
@@ -940,26 +935,26 @@ Author URL:
 	<!-- //banner-slider -->
 
 	<!-- smooth scrolling -->
-	<script src="js/SmoothScroll.min.js"></script>
+	<script src="{{ asset('js/SmoothScroll.min.js') }}"></script>
 	<!-- //smooth scrolling -->
 
 	<!-- move-top -->
-	<script src="js/move-top.js"></script>
+	<script src="{{ asset('js/move-top.js') }}"></script>
 	<!-- easing -->
-	<script src="js/easing.js"></script>
+	<script src="{{ asset('js/easing.js') }}"></script>
 	<!--  necessary snippets for few javascript files -->
-	<script src="js/car_services.js"></script>
+	<script src="{{ asset('js/carServices.js') }}"></script>
 	<!-- banner text -->
-	<script src="js/text.js"></script>
+	<script src="{{ asset('js/text.js') }}/"></script>
 	<!-- menu -->
-	<script src="js/menu.js"></script>
+	<script src="{{ asset('js/menu.js') }}"></script>
 	<!-- lightbox -->
-	<script src="js/smoothbox.jquery2.js"></script>
-
+	<script src="{{ asset('js/smoothbox.jquery2.js') }}"></script>
+    
 	<!-- testimonials -->
 	<!-- required-js-files-->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<script src="js/owl.carousel.js"></script>
+	<link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
+	<script src="{{ asset('js/owl.carousel.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -974,7 +969,5 @@ Author URL:
 	</script>
 	<!-- //required-js-files-->
 	<!-- //Js files -->
-
-</body>
-
+    </body>
 </html>
