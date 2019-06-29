@@ -10,6 +10,26 @@ Gabriel Pedro
 
 Anderson Oliveira
 
+# O que fazer #
+  ## Se você não tiver, você tem que ter o composer instalado no computador e executar os comando: composer install
+  ## Se já tiver, apenas rode: composer update
+  ## Configurar arquivo .env, depois você utiliza o comando: php artisan migrate (Serve para popular o banco)
+  ## Por fim, se tudo estiver correto: php artisan serve
+  
+# Lembrando que precisa ter instalado os seguintes itens:
+  ## composer
+  ## Algumas dependências: 
+    ### OpenSSL
+    ### PHP Extension PDO
+    ### PHP Extension Mbstring
+    ### PHP Extension Tokenizer
+    ### PHP Extension XML
+    ### PHP Extension Ctype
+    ### PHP Extension JSON 
+    ### PHP Extension BCMath 
+    ### PHP Extension
+  ## Geralmente já deve ter quando instala xampp/wamp64.
+
 Criar um layout com os formulários de cadastro e funcionalidades básica para cada um dos cases apresentados em aula.
 O mesmo apresentar os conceitos vistos em sala de aula, como HTMl5, CSS3 e Bootstrap.
 
