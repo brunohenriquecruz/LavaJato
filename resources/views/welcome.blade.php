@@ -43,19 +43,37 @@
 									</div>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
 						</div>
-		
+					<form method="POST" action="{{ route('login') }}">
+					@csrf
 						<div class="modal-body">
 							<div class="form-group">
-								<input type="text" nome="username" class="form-control" placeholder="Usuário">
+								<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Digite seu e-mail" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
 							</div>
 							<div class="form-group">
-								<input type="password" nome="password" class="form-control" placeholder="Senha">
+								<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Digite sua senha" required autocomplete="current-password">
+
+								@error('password')
+									<span class="invalid-feedback" role="alert">
+										<strong>{{ $message }}</strong>
+									</span>
+								@enderror
 							</div>	
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-light">Registrar</button>
-							<button type="submit" class="btn btn-success"> <a href="dash/dashboard.html">Entrar</a></button>
+							<a href="{{ route('register') }}"><button type="submit" class="btn btn-light">Registrar</button></a>
+							<!-- <a href="{{ route('login') }}"><button type="submit" class="btn btn-success">Entrar</button></a> -->
+							<button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+							</button>
+							<!-- <button type="submit" class="btn btn-success"> <a href="dash/dashboard.html">Entrar</a></button> -->
 						</div>
+					</form>
 					</div>
 				</div>
 		</div>
@@ -104,7 +122,7 @@
 									<a href="dash/dashboard.html">Dashboard</a>
 								</li> -->
 								<li>
-									<button class="btn btn-danger" data-toggle="modal" data-target="#loginWeb"><i class="far fa-user"></i> Login</button>
+									<button class="btn btn-danger" data-toggle="modal" data-target="#loginWeb"><i class="far fa-user"></i>Entrar</button>
 								</li>
 							</ul>
 						</div>
@@ -816,7 +834,7 @@
 			<div class="d-flex">
 				<div class="col-lg-6 contact-right">
 					<div class="l-agile">
-						<form action="#" method="post">
+						<!-- <form action="#" method="post"> -->
 							<div class="form-group">
 								<input type="text" name="name" placeholder="Seu nome" class="form-control" required="">
 							</div>
@@ -832,8 +850,9 @@
 							<div class="form-group">
 								<textarea name="message" placeholder="Sua mensagem" class="form-control" required=""></textarea>
 							</div>
-							<input type="submit" value="Enviar Mensagem">
-						</form>
+							<a href="#"><input type="submit" value="Enviar Mensagem"></a>
+							
+						<!-- </form> -->
 					</div>
 				</div>
 				<div class="col-lg-6 contact-left mt-lg-0 mt-5">
