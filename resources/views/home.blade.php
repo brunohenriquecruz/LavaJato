@@ -1,3 +1,4 @@
+<link rel="icon" href="{{ asset('img/favicon.ico') }}" >
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +9,7 @@
     <meta name="author" content="">
     <title>TabaJara - Dashboard</title>
     <!-- ICONE CARRINHO -->
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}" >
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('js/fontawesome-free/css/all.min.css') }}">
@@ -24,7 +25,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/home') }}">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -36,7 +37,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-            <a class="nav-link" href="dashboard.html">
+            <a class="nav-link" href="{{ url('/home') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
             </li>
@@ -62,7 +63,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Serviços:</h6>
                 <a class="collapse-item" href="login.html">Registro de entrada</a>
-                <a class="collapse-item" href="register.html">Cadastrar Veículo</a>
+                <a class="collapse-item" href="{{ url('/automovelcad') }}">Cadastrar Veículo</a>
                 <a class="collapse-item" href="forgot-password.html">Tipos de Lavagens</a>
                 <!-- <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
