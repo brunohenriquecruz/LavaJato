@@ -9,6 +9,12 @@
 
 Criação de Sistema Laravel com os formulários de cadastro, relacionamentos e funcionalidade básica para cada um dos cases apresentados na aula 01. O mesmo apresentar os conceitos vistos em sala de aula, como Migrate, Model, Controllers, Views e Relacionamento, assim como as funcionalidades básicas de cada case;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+Davi é proprietário do maior lava-jato de Varginha, o Lava Jato Tabajara, ele ganhou destaque local no segmento por investir em produtos de primeira e se preocupar com o meio ambiente, oferecendo lavagens ecológicas e a seco, além disso sua equipe se destaca na qualidade do tratamento aos clientes. Todos esses fatores levaram ao seu pequeno empreendimento ter um aumentando considerável do fluxo de clientes, e com isso levando a necessidade de gerenciar o seu lava-jato. Davi decidiu contratar a sua software house para desenvolver um sistema de gestão e controle das lavagens. Para Davi, o seu sistema precisa ter um cadastro de veículos e modelos para identificação das entradas de veículos para lavagem. Cadastro dos serviços (tipos das lavagens) com preços oferecidos pelo lava-jato. E controle da entrada dos veículos por ordem de lavagem e também com o tipo de lavagem escolhida (tabela de serviço). Essa entrada deve registrar além do serviço, também o modelo e placa do veículo, além do nome do proprietário com telefone. Além disso Davi precisa de um relatório das lavagens mensais/diárias com um total do valor faturado naquele período. Tudo isso deve ser um sistema online, com acesso restrito a usuário e senha.
+=======
+>>>>>>> 0b34fe70375575df9d64e9a3d6a9950916768a29
 Vinicius Rocha
 
 Gabriel Pedro
@@ -40,3 +46,7 @@ O mesmo apresentar os conceitos vistos em sala de aula, como HTMl5, CSS3 e Boots
 
 Davi é proprietário do maior lava-jato de Varginha, o Lava Jato Tabajara, ele ganhou destaque local no segmento por investir em produtos de primeira e se preocupar com o meio ambiente, oferecendo lavagens ecológicas e a seco, além disso sua equipe se destaca na qualidade do tratamento aos clientes. Todos esses fatores levaram ao seu pequeno empreendimento ter um aumentando considerável do fluxo de clientes, e com isso levando a necessidade de gerenciar o seu lava-jato. 
 Davi decidiu contratar a sua software house para desenvolver um sistema de gestão e controle das lavagens. Para Davi, o seu sistema precisa ter um cadastro de veículos e modelos para identificação das entradas de veículos para lavagem. Cadastro dos serviços (tipos das lavagens) com preços oferecidos pelo lava-jato. E controle da entrada dos veículos por ordem de lavagem e também com o tipo de lavagem escolhida (tabela de serviço). Essa entrada deve registrar além do serviço, também o modelo e placa do veículo, além do nome do proprietário com telefone. Além disso Davi precisa de um relatório das lavagens mensais/diárias com um total do valor faturado naquele período. Tudo isso deve ser um sistema online, com acesso restrito a usuário e senha.
+<<<<<<< HEAD
+=======
+>>>>>>> bf82d3597b9d0b1410b1760840abc2591e346649
+>>>>>>> 0b34fe70375575df9d64e9a3d6a9950916768a29
