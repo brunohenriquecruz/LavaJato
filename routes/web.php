@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,19 +9,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-<<<<<<< HEAD
+Route::resource('automovelcad', 'AutomovelCadController')->middleware('auth');
 Route::resource('clientcad', 'ClientCadController')->middleware('auth');
-
-=======
-
-
-Route::resource('automovelcad', 'AutomovelCadControler')->middleware('auth');
->>>>>>> 41a45de8c727e0e40d2b153897c8a2f0690e939b
+Route::resource('servicescad', 'ServiceCadController')->middleware('auth');
+Route::resource('washescad', 'WashCadController')->middleware('auth');
+Route::get('listservice/{id}', 'ListServiceController@index');
