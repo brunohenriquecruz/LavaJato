@@ -280,6 +280,7 @@
                               <th>CPF</th>
                               <th>Modelo</th>
                               <th>Serviço</th>
+                              <th>Valor</th>
                               <th>Data Serviço</th>
                               <th>Ações</th>
                           </tr>
@@ -291,6 +292,7 @@
                             <td>{{$dt->cpf}}</td>
                             <td>{{$dt->carro}}</td>
                             <td>{{$dt->servico}}</td>
+                            <td>{{$dt->valor}}</td>
                             <td>{{date('d/m/Y', strtotime($dt->data))}}</td>
                               <td>
                                 <a href="{{ url('listservice', $dt->id) }}" id="id" name="id"><i class="fas fa-eye"></i></a>
