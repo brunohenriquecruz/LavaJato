@@ -66,7 +66,7 @@
 							</div>	
 						</div>
 						<div class="modal-footer">
-							<a href="{{ route('register') }}"><button type="submit" class="btn btn-light">Registrar</button></a>
+							<!-- <a href="{{ route('register') }}"><button type="submit" class="btn btn-light">Registrar</button></a> -->
 							<!-- <a href="{{ route('login') }}"><button type="submit" class="btn btn-success">Entrar</button></a> -->
 							<button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
