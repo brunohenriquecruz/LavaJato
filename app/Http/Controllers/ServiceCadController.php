@@ -14,7 +14,7 @@ class ServiceCadController extends Controller
     public function index()
     {
         $service = DB::table('services')->get();
-        return view('servicescad', compact('service'));
+        return view('servicecad', compact('service'));
     }
     protected function validator(array $data)
     {
